@@ -2,7 +2,8 @@ import '@mantine/core/styles.css'
 import type { Metadata } from 'next'
 import { MantineProvider, ColorSchemeScript } from '@mantine/core'
 import React from 'react'
-import { theme } from '@@/theme'
+import { theme } from '@/styles/theme'
+import { Header } from '@/layouts'
 
 const isDevMode = process.env.NODE_ENV === 'development'
 const siteName = 'CROSSLINE'
@@ -34,14 +35,22 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-        <ColorSchemeScript />
+        <ColorSchemeScript defaultColorScheme="auto" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider
+          defaultColorScheme="auto"
+          theme={theme}
+          cssVariablesSelector="html"
+          classNamesPrefix="crossline"
+        >
+          <Header />
+          {children}
+        </MantineProvider>
       </body>
     </html>
   )

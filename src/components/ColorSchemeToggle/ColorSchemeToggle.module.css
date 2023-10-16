@@ -1,0 +1,38 @@
+.button {
+  padding: var(--mantine-spacing-md);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--mantine-radius-sm);
+  @mixin dark {
+    border-color: var(--mantine-color-gray-6);
+  }
+
+  @mixin light {
+    border-color: var(--mantine-color-dark-4);
+  }
+}
+
+.icon {
+  width: rem(22px);
+  height: rem(22px);
+}
+
+.dark {
+  @mixin dark {
+    display: none;
+  }
+
+  @mixin light {
+    display: block;
+  }
+}
+
+.light {
+  @mixin light {
+    display: none;
+  }
+
+  @mixin dark {
+    display: block;
+  }
+}

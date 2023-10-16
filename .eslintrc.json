@@ -4,6 +4,7 @@
     "es2022": true
   },
   "extends": [
+    "mantine",
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",

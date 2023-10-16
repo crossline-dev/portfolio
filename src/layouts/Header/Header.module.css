@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+}
+
+.inner {
+  height: rem(48px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
