@@ -1,0 +1,8 @@
+.common {
+  margin-top: rem(110px);
+}
+
+.container {
+  padding-left: rem(36px);
+  padding-right: rem(36px);
+}

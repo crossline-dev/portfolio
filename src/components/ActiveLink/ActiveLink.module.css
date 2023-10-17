@@ -1,0 +1,25 @@
+.link {
+  display: block;
+  position: relative;
+  font-family: var(--nunito), sans-serif;
+  font-weight: 400;
+  color: currentColor;
+  transition: opacity 0.4s ease;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  padding-right: 1.25rem;
+  @mixin hover {
+    opacity: 0.6;
+  }
+}
+
+.active::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 0.5rem;
+  height: 1px;
+  right: 0;
+  top: calc(50% - 0.5px);
+  background-color: currentColor;
+}

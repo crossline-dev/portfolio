@@ -2,9 +2,11 @@
   display: flex;
 }
 
-.inner {
-  height: rem(48px);
+.buttons {
+  position: fixed;
+  top: rem(36px);
+  right: calc(rem(36px) + var(--removed-body-scroll-bar-size, 0px));
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  z-index: 202;
 }

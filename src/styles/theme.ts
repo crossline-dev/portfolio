@@ -3,5 +3,13 @@
 import { createTheme } from '@mantine/core'
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+  white: '#fafbfc',
+  black: '#1a1e2e',
+  components: {
+    Container: {
+      defaultProps: {
+        size: '100%',
+      },
+    },
+  },
 })

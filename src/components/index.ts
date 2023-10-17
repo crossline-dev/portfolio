@@ -1,3 +1,3 @@
-import ColorSchemeToggle from "@/components/ColorSchemeToggle/ColorSchemeToggle";
+import ActiveLink from './ActiveLink/ActiveLink'
 
-export { ColorSchemeToggle };
+export { ActiveLink }

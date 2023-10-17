@@ -5,7 +5,8 @@ import {
   useComputedColorScheme,
   useMantineColorScheme,
 } from '@mantine/core'
-import { BiSolidSun, BiSolidMoon } from 'react-icons/bi'
+import { PiSunLight, PiMoonLight } from 'react-icons/pi'
+import { RiMoonFill } from 'react-icons/ri'
 import cx from 'clsx'
 import styles from './ColorSchemeToggle.module.css'
 
@@ -22,8 +23,8 @@ export default function ColorSchemeToggle() {
       }
       aria-label="Toggle color scheme"
     >
-      <BiSolidSun className={cx(styles.icon, styles.light)} />
-      <BiSolidMoon className={cx(styles.icon, styles.dark)} />
+      <PiSunLight className={cx(styles.icon, styles.light)} />
+      <RiMoonFill className={cx(styles.icon, styles.dark)} />
     </UnstyledButton>
   )
 }

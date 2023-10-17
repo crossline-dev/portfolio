@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container {
+  padding-left: rem(36px);
+  padding-right: rem(36px);
+}
+
+.copylight {
+  font-family: var(--nunito), sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  text-align: center;
+}

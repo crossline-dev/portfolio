@@ -1,0 +1,30 @@
+.anchor {
+  font-family: var(--nunito), sans-serif;
+  display: block;
+  position: fixed;
+  top: rem(36px);
+  left: rem(36px);
+  text-decoration: none;
+  z-index: 202;
+  color: currentColor;
+  transition: opacity 0.4s ease;
+  opacity: 1;
+  @mixin hover {
+    opacity: 0.6;
+  }
+}
+
+.sitename {
+  display: block;
+  font-size: rem(16px);
+  line-height: rem(21px);
+  letter-spacing: 0.4em;
+}
+
+.place {
+  display: block;
+  font-size: rem(12px);
+  line-height: rem(18px);
+  letter-spacing: 0.4em;
+  margin-top: 0.5em;
+}

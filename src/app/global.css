@@ -1,0 +1,6 @@
+body {
+  @mixin light {
+    background-color: #fafbfc;
+    color: #454647;
+  }
+}
